@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+double area(double);// function decleration
+
+int main() {
+    double radius;
+    printf("Enter the radius");
+    scanf("%lf",&radius);
+    
+    double k=area(radius);// call by value
+    printf("Area of circle is %lf",k);
+}
+
+double area(double Radius) {
+    
+    int area;
+    area=3.14*Radius*Radius;
+    return area;
+}
